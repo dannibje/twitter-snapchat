@@ -1,427 +1,1085 @@
-// !$*UTF8*$!
-{
-	archiveVersion = 1;
-	classes = {
-	};
-	objectVersion = 46;
-	objects = {
-
-/* Begin PBXBuildFile section */
-		75D20F201A5FD77100FE941F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 75D20F1F1A5FD77100FE941F /* main.m */; };
-		75D20F231A5FD77100FE941F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 75D20F221A5FD77100FE941F /* AppDelegate.m */; };
-		75D20F261A5FD77100FE941F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75D20F251A5FD77100FE941F /* ViewController.m */; };
-		75D20F291A5FD77200FE941F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75D20F271A5FD77200FE941F /* Main.storyboard */; };
-		75D20F2B1A5FD77200FE941F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75D20F2A1A5FD77200FE941F /* Images.xcassets */; };
-		75D20F2E1A5FD77200FE941F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 75D20F2C1A5FD77200FE941F /* LaunchScreen.xib */; };
-		75D20F3A1A5FD77200FE941F /* twitter_snapchatTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 75D20F391A5FD77200FE941F /* twitter_snapchatTests.m */; };
-/* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		75D20F341A5FD77200FE941F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 75D20F121A5FD77100FE941F /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 75D20F191A5FD77100FE941F;
-			remoteInfo = "twitter-snapchat";
-		};
-/* End PBXContainerItemProxy section */
-
-/* Begin PBXFileReference section */
-		75D20F1A1A5FD77100FE941F /* twitter-snapchat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "twitter-snapchat.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		75D20F1E1A5FD77100FE941F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		75D20F1F1A5FD77100FE941F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		75D20F211A5FD77100FE941F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		75D20F221A5FD77100FE941F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		75D20F241A5FD77100FE941F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		75D20F251A5FD77100FE941F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		75D20F281A5FD77200FE941F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		75D20F2A1A5FD77200FE941F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		75D20F2D1A5FD77200FE941F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		75D20F331A5FD77200FE941F /* twitter-snapchatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "twitter-snapchatTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		75D20F381A5FD77200FE941F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		75D20F391A5FD77200FE941F /* twitter_snapchatTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = twitter_snapchatTests.m; sourceTree = "<group>"; };
-/* End PBXFileReference section */
-
-/* Begin PBXFrameworksBuildPhase section */
-		75D20F171A5FD77100FE941F /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		75D20F301A5FD77200FE941F /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXFrameworksBuildPhase section */
-
-/* Begin PBXGroup section */
-		75D20F111A5FD77100FE941F = {
-			isa = PBXGroup;
-			children = (
-				75D20F1C1A5FD77100FE941F /* twitter-snapchat */,
-				75D20F361A5FD77200FE941F /* twitter-snapchatTests */,
-				75D20F1B1A5FD77100FE941F /* Products */,
-			);
-			sourceTree = "<group>";
-		};
-		75D20F1B1A5FD77100FE941F /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				75D20F1A1A5FD77100FE941F /* twitter-snapchat.app */,
-				75D20F331A5FD77200FE941F /* twitter-snapchatTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		75D20F1C1A5FD77100FE941F /* twitter-snapchat */ = {
-			isa = PBXGroup;
-			children = (
-				75D20F211A5FD77100FE941F /* AppDelegate.h */,
-				75D20F221A5FD77100FE941F /* AppDelegate.m */,
-				75D20F241A5FD77100FE941F /* ViewController.h */,
-				75D20F251A5FD77100FE941F /* ViewController.m */,
-				75D20F271A5FD77200FE941F /* Main.storyboard */,
-				75D20F2A1A5FD77200FE941F /* Images.xcassets */,
-				75D20F2C1A5FD77200FE941F /* LaunchScreen.xib */,
-				75D20F1D1A5FD77100FE941F /* Supporting Files */,
-			);
-			path = "twitter-snapchat";
-			sourceTree = "<group>";
-		};
-		75D20F1D1A5FD77100FE941F /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				75D20F1E1A5FD77100FE941F /* Info.plist */,
-				75D20F1F1A5FD77100FE941F /* main.m */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		75D20F361A5FD77200FE941F /* twitter-snapchatTests */ = {
-			isa = PBXGroup;
-			children = (
-				75D20F391A5FD77200FE941F /* twitter_snapchatTests.m */,
-				75D20F371A5FD77200FE941F /* Supporting Files */,
-			);
-			path = "twitter-snapchatTests";
-			sourceTree = "<group>";
-		};
-		75D20F371A5FD77200FE941F /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				75D20F381A5FD77200FE941F /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-/* End PBXGroup section */
-
-/* Begin PBXNativeTarget section */
-		75D20F191A5FD77100FE941F /* twitter-snapchat */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 75D20F3D1A5FD77200FE941F /* Build configuration list for PBXNativeTarget "twitter-snapchat" */;
-			buildPhases = (
-				75D20F161A5FD77100FE941F /* Sources */,
-				75D20F171A5FD77100FE941F /* Frameworks */,
-				75D20F181A5FD77100FE941F /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "twitter-snapchat";
-			productName = "twitter-snapchat";
-			productReference = 75D20F1A1A5FD77100FE941F /* twitter-snapchat.app */;
-			productType = "com.apple.product-type.application";
-		};
-		75D20F321A5FD77200FE941F /* twitter-snapchatTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 75D20F401A5FD77200FE941F /* Build configuration list for PBXNativeTarget "twitter-snapchatTests" */;
-			buildPhases = (
-				75D20F2F1A5FD77200FE941F /* Sources */,
-				75D20F301A5FD77200FE941F /* Frameworks */,
-				75D20F311A5FD77200FE941F /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				75D20F351A5FD77200FE941F /* PBXTargetDependency */,
-			);
-			name = "twitter-snapchatTests";
-			productName = "twitter-snapchatTests";
-			productReference = 75D20F331A5FD77200FE941F /* twitter-snapchatTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-/* End PBXNativeTarget section */
-
-/* Begin PBXProject section */
-		75D20F121A5FD77100FE941F /* Project object */ = {
-			isa = PBXProject;
-			attributes = {
-				LastUpgradeCheck = 0610;
-				ORGANIZATIONNAME = danni;
-				TargetAttributes = {
-					75D20F191A5FD77100FE941F = {
-						CreatedOnToolsVersion = 6.1;
-					};
-					75D20F321A5FD77200FE941F = {
-						CreatedOnToolsVersion = 6.1;
-						TestTargetID = 75D20F191A5FD77100FE941F;
-					};
-				};
-			};
-			buildConfigurationList = 75D20F151A5FD77100FE941F /* Build configuration list for PBXProject "twitter-snapchat" */;
-			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
-			hasScannedForEncodings = 0;
-			knownRegions = (
-				en,
-				Base,
-			);
-			mainGroup = 75D20F111A5FD77100FE941F;
-			productRefGroup = 75D20F1B1A5FD77100FE941F /* Products */;
-			projectDirPath = "";
-			projectRoot = "";
-			targets = (
-				75D20F191A5FD77100FE941F /* twitter-snapchat */,
-				75D20F321A5FD77200FE941F /* twitter-snapchatTests */,
-			);
-		};
-/* End PBXProject section */
-
-/* Begin PBXResourcesBuildPhase section */
-		75D20F181A5FD77100FE941F /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				75D20F291A5FD77200FE941F /* Main.storyboard in Resources */,
-				75D20F2E1A5FD77200FE941F /* LaunchScreen.xib in Resources */,
-				75D20F2B1A5FD77200FE941F /* Images.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		75D20F311A5FD77200FE941F /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
-
-/* Begin PBXSourcesBuildPhase section */
-		75D20F161A5FD77100FE941F /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				75D20F261A5FD77100FE941F /* ViewController.m in Sources */,
-				75D20F231A5FD77100FE941F /* AppDelegate.m in Sources */,
-				75D20F201A5FD77100FE941F /* main.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		75D20F2F1A5FD77200FE941F /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				75D20F3A1A5FD77200FE941F /* twitter_snapchatTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		75D20F351A5FD77200FE941F /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 75D20F191A5FD77100FE941F /* twitter-snapchat */;
-			targetProxy = 75D20F341A5FD77200FE941F /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		75D20F271A5FD77200FE941F /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				75D20F281A5FD77200FE941F /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		75D20F2C1A5FD77200FE941F /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				75D20F2D1A5FD77200FE941F /* Base */,
-			);
-			name = LaunchScreen.xib;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
-/* Begin XCBuildConfiguration section */
-		75D20F3B1A5FD77200FE941F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
-			};
-			name = Debug;
-		};
-		75D20F3C1A5FD77200FE941F /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = YES;
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				SDKROOT = iphoneos;
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		75D20F3E1A5FD77200FE941F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = "twitter-snapchat/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Debug;
-		};
-		75D20F3F1A5FD77200FE941F /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = "twitter-snapchat/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
-		75D20F411A5FD77200FE941F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "twitter-snapchatTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/twitter-snapchat.app/twitter-snapchat";
-			};
-			name = Debug;
-		};
-		75D20F421A5FD77200FE941F /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "twitter-snapchatTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/twitter-snapchat.app/twitter-snapchat";
-			};
-			name = Release;
-		};
-/* End XCBuildConfiguration section */
-
-/* Begin XCConfigurationList section */
-		75D20F151A5FD77100FE941F /* Build configuration list for PBXProject "twitter-snapchat" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				75D20F3B1A5FD77200FE941F /* Debug */,
-				75D20F3C1A5FD77200FE941F /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		75D20F3D1A5FD77200FE941F /* Build configuration list for PBXNativeTarget "twitter-snapchat" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				75D20F3E1A5FD77200FE941F /* Debug */,
-				75D20F3F1A5FD77200FE941F /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-		};
-		75D20F401A5FD77200FE941F /* Build configuration list for PBXNativeTarget "twitter-snapchatTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				75D20F411A5FD77200FE941F /* Debug */,
-				75D20F421A5FD77200FE941F /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-		};
-/* End XCConfigurationList section */
-	};
-	rootObject = 75D20F121A5FD77100FE941F /* Project object */;
-}
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>archiveVersion</key>
+	<string>1</string>
+	<key>classes</key>
+	<dict/>
+	<key>objectVersion</key>
+	<string>46</string>
+	<key>objects</key>
+	<dict>
+		<key>0E0D329C45E759F20EDF196A</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Check Pods Manifest.lock</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
+if [[ $? != 0 ]] ; then
+    cat &lt;&lt; EOM
+error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
+EOM
+    exit 1
+fi
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>1642016966182EC6160C60B4</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods-twitter-snapchat.release.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Target Support Files/Pods-twitter-snapchat/Pods-twitter-snapchat.release.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6A5BBB4A13D94770C678F4B3</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Copy Pods Resources</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>"${SRCROOT}/Pods/Target Support Files/Pods-twitter-snapchat/Pods-twitter-snapchat-resources.sh"
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>73E64423FE332556EC3111B2</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods-twitter-snapchat.debug.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Target Support Files/Pods-twitter-snapchat/Pods-twitter-snapchat.debug.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>75D20F111A5FD77100FE941F</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>75D20F1C1A5FD77100FE941F</string>
+				<string>75D20F361A5FD77200FE941F</string>
+				<string>75D20F1B1A5FD77100FE941F</string>
+				<string>7CA8A7FDB23E482794DC66C4</string>
+				<string>A95EBDA7903D58593562585F</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>75D20F121A5FD77100FE941F</key>
+		<dict>
+			<key>attributes</key>
+			<dict>
+				<key>LastUpgradeCheck</key>
+				<string>0610</string>
+				<key>ORGANIZATIONNAME</key>
+				<string>danni</string>
+				<key>TargetAttributes</key>
+				<dict>
+					<key>75D20F191A5FD77100FE941F</key>
+					<dict>
+						<key>CreatedOnToolsVersion</key>
+						<string>6.1</string>
+					</dict>
+					<key>75D20F321A5FD77200FE941F</key>
+					<dict>
+						<key>CreatedOnToolsVersion</key>
+						<string>6.1</string>
+						<key>TestTargetID</key>
+						<string>75D20F191A5FD77100FE941F</string>
+					</dict>
+				</dict>
+			</dict>
+			<key>buildConfigurationList</key>
+			<string>75D20F151A5FD77100FE941F</string>
+			<key>compatibilityVersion</key>
+			<string>Xcode 3.2</string>
+			<key>developmentRegion</key>
+			<string>English</string>
+			<key>hasScannedForEncodings</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXProject</string>
+			<key>knownRegions</key>
+			<array>
+				<string>en</string>
+				<string>Base</string>
+			</array>
+			<key>mainGroup</key>
+			<string>75D20F111A5FD77100FE941F</string>
+			<key>productRefGroup</key>
+			<string>75D20F1B1A5FD77100FE941F</string>
+			<key>projectDirPath</key>
+			<string></string>
+			<key>projectReferences</key>
+			<array/>
+			<key>projectRoot</key>
+			<string></string>
+			<key>targets</key>
+			<array>
+				<string>75D20F191A5FD77100FE941F</string>
+				<string>75D20F321A5FD77200FE941F</string>
+			</array>
+		</dict>
+		<key>75D20F151A5FD77100FE941F</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>75D20F3B1A5FD77200FE941F</string>
+				<string>75D20F3C1A5FD77200FE941F</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>75D20F161A5FD77100FE941F</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>75D20F4B1A5FDE3A00FE941F</string>
+				<string>75D20F4F1A5FDFA500FE941F</string>
+				<string>75D20F261A5FD77100FE941F</string>
+				<string>75D20F231A5FD77100FE941F</string>
+				<string>75D20F201A5FD77100FE941F</string>
+				<string>75D20F451A5FD93E00FE941F</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>75D20F171A5FD77100FE941F</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>76BCCFEF2133791A6823BEBE</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>75D20F181A5FD77100FE941F</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>75D20F291A5FD77200FE941F</string>
+				<string>75D20F501A5FDFA500FE941F</string>
+				<string>75D20F2E1A5FD77200FE941F</string>
+				<string>75D20F2B1A5FD77200FE941F</string>
+			</array>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>75D20F191A5FD77100FE941F</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>75D20F3D1A5FD77200FE941F</string>
+			<key>buildPhases</key>
+			<array>
+				<string>0E0D329C45E759F20EDF196A</string>
+				<string>75D20F161A5FD77100FE941F</string>
+				<string>75D20F171A5FD77100FE941F</string>
+				<string>75D20F181A5FD77100FE941F</string>
+				<string>6A5BBB4A13D94770C678F4B3</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>twitter-snapchat</string>
+			<key>productName</key>
+			<string>twitter-snapchat</string>
+			<key>productReference</key>
+			<string>75D20F1A1A5FD77100FE941F</string>
+			<key>productType</key>
+			<string>com.apple.product-type.application</string>
+		</dict>
+		<key>75D20F1A1A5FD77100FE941F</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.application</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>twitter-snapchat.app</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>75D20F1B1A5FD77100FE941F</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>75D20F1A1A5FD77100FE941F</string>
+				<string>75D20F331A5FD77200FE941F</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Products</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>75D20F1C1A5FD77100FE941F</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>75D20F211A5FD77100FE941F</string>
+				<string>75D20F221A5FD77100FE941F</string>
+				<string>75D20F431A5FD93E00FE941F</string>
+				<string>75D20F441A5FD93E00FE941F</string>
+				<string>75D20F241A5FD77100FE941F</string>
+				<string>75D20F251A5FD77100FE941F</string>
+				<string>75D20F491A5FDE3A00FE941F</string>
+				<string>75D20F4A1A5FDE3A00FE941F</string>
+				<string>75D20F4C1A5FDFA500FE941F</string>
+				<string>75D20F4D1A5FDFA500FE941F</string>
+				<string>75D20F4E1A5FDFA500FE941F</string>
+				<string>75D20F271A5FD77200FE941F</string>
+				<string>75D20F2A1A5FD77200FE941F</string>
+				<string>75D20F2C1A5FD77200FE941F</string>
+				<string>75D20F1D1A5FD77100FE941F</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>twitter-snapchat</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>75D20F1D1A5FD77100FE941F</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>75D20F1E1A5FD77100FE941F</string>
+				<string>75D20F1F1A5FD77100FE941F</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Supporting Files</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>75D20F1E1A5FD77100FE941F</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>75D20F1F1A5FD77100FE941F</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>main.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>75D20F201A5FD77100FE941F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>75D20F1F1A5FD77100FE941F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>75D20F211A5FD77100FE941F</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>AppDelegate.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>75D20F221A5FD77100FE941F</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>AppDelegate.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>75D20F231A5FD77100FE941F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>75D20F221A5FD77100FE941F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>75D20F241A5FD77100FE941F</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>FirstViewController.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>75D20F251A5FD77100FE941F</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>FirstViewController.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>75D20F261A5FD77100FE941F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>75D20F251A5FD77100FE941F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>75D20F271A5FD77200FE941F</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>75D20F281A5FD77200FE941F</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>Main.storyboard</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>75D20F281A5FD77200FE941F</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.storyboard</string>
+			<key>name</key>
+			<string>Base</string>
+			<key>path</key>
+			<string>Base.lproj/Main.storyboard</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>75D20F291A5FD77200FE941F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>75D20F271A5FD77200FE941F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>75D20F2A1A5FD77200FE941F</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>folder.assetcatalog</string>
+			<key>path</key>
+			<string>Images.xcassets</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>75D20F2B1A5FD77200FE941F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>75D20F2A1A5FD77200FE941F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>75D20F2C1A5FD77200FE941F</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>75D20F2D1A5FD77200FE941F</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>LaunchScreen.xib</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>75D20F2D1A5FD77200FE941F</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.xib</string>
+			<key>name</key>
+			<string>Base</string>
+			<key>path</key>
+			<string>Base.lproj/LaunchScreen.xib</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>75D20F2E1A5FD77200FE941F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>75D20F2C1A5FD77200FE941F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>75D20F2F1A5FD77200FE941F</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>75D20F3A1A5FD77200FE941F</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>75D20F301A5FD77200FE941F</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>75D20F311A5FD77200FE941F</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>75D20F321A5FD77200FE941F</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>75D20F401A5FD77200FE941F</string>
+			<key>buildPhases</key>
+			<array>
+				<string>75D20F2F1A5FD77200FE941F</string>
+				<string>75D20F301A5FD77200FE941F</string>
+				<string>75D20F311A5FD77200FE941F</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array>
+				<string>75D20F351A5FD77200FE941F</string>
+			</array>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>twitter-snapchatTests</string>
+			<key>productName</key>
+			<string>twitter-snapchatTests</string>
+			<key>productReference</key>
+			<string>75D20F331A5FD77200FE941F</string>
+			<key>productType</key>
+			<string>com.apple.product-type.bundle.unit-test</string>
+		</dict>
+		<key>75D20F331A5FD77200FE941F</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.cfbundle</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>twitter-snapchatTests.xctest</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>75D20F341A5FD77200FE941F</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>75D20F121A5FD77100FE941F</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>75D20F191A5FD77100FE941F</string>
+			<key>remoteInfo</key>
+			<string>twitter-snapchat</string>
+		</dict>
+		<key>75D20F351A5FD77200FE941F</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>target</key>
+			<string>75D20F191A5FD77100FE941F</string>
+			<key>targetProxy</key>
+			<string>75D20F341A5FD77200FE941F</string>
+		</dict>
+		<key>75D20F361A5FD77200FE941F</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>75D20F391A5FD77200FE941F</string>
+				<string>75D20F371A5FD77200FE941F</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>twitter-snapchatTests</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>75D20F371A5FD77200FE941F</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>75D20F381A5FD77200FE941F</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Supporting Files</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>75D20F381A5FD77200FE941F</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>75D20F391A5FD77200FE941F</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>twitter_snapchatTests.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>75D20F3A1A5FD77200FE941F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>75D20F391A5FD77200FE941F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>75D20F3B1A5FD77200FE941F</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_UNREACHABLE_CODE</key>
+				<string>YES</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>NO</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_DYNAMIC_NO_PIC</key>
+				<string>NO</string>
+				<key>GCC_OPTIMIZATION_LEVEL</key>
+				<string>0</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
+				<string>NO</string>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES_ERROR</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES_AGGRESSIVE</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>8.1</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>YES</string>
+				<key>ONLY_ACTIVE_ARCH</key>
+				<string>YES</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>75D20F3C1A5FD77200FE941F</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_UNREACHABLE_CODE</key>
+				<string>YES</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>YES</string>
+				<key>ENABLE_NS_ASSERTIONS</key>
+				<string>NO</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES_ERROR</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES_AGGRESSIVE</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>8.1</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>NO</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>VALIDATE_PRODUCT</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>75D20F3D1A5FD77200FE941F</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>75D20F3E1A5FD77200FE941F</string>
+				<string>75D20F3F1A5FD77200FE941F</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>75D20F3E1A5FD77200FE941F</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>73E64423FE332556EC3111B2</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
+				<string>AppIcon</string>
+				<key>INFOPLIST_FILE</key>
+				<string>twitter-snapchat/Info.plist</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/Frameworks</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>75D20F3F1A5FD77200FE941F</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>1642016966182EC6160C60B4</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
+				<string>AppIcon</string>
+				<key>INFOPLIST_FILE</key>
+				<string>twitter-snapchat/Info.plist</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/Frameworks</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>75D20F401A5FD77200FE941F</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>75D20F411A5FD77200FE941F</string>
+				<string>75D20F421A5FD77200FE941F</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>75D20F411A5FD77200FE941F</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>BUNDLE_LOADER</key>
+				<string>$(TEST_HOST)</string>
+				<key>FRAMEWORK_SEARCH_PATHS</key>
+				<array>
+					<string>$(SDKROOT)/Developer/Library/Frameworks</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>INFOPLIST_FILE</key>
+				<string>twitter-snapchatTests/Info.plist</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>TEST_HOST</key>
+				<string>$(BUILT_PRODUCTS_DIR)/twitter-snapchat.app/twitter-snapchat</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>75D20F421A5FD77200FE941F</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>BUNDLE_LOADER</key>
+				<string>$(TEST_HOST)</string>
+				<key>FRAMEWORK_SEARCH_PATHS</key>
+				<array>
+					<string>$(SDKROOT)/Developer/Library/Frameworks</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>INFOPLIST_FILE</key>
+				<string>twitter-snapchatTests/Info.plist</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>TEST_HOST</key>
+				<string>$(BUILT_PRODUCTS_DIR)/twitter-snapchat.app/twitter-snapchat</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>75D20F431A5FD93E00FE941F</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>PageViewController.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>75D20F441A5FD93E00FE941F</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>PageViewController.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>75D20F451A5FD93E00FE941F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>75D20F441A5FD93E00FE941F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>75D20F491A5FDE3A00FE941F</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>SecondViewController.h</string>
+			<key>path</key>
+			<string>../SecondViewController.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>75D20F4A1A5FDE3A00FE941F</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>SecondViewController.m</string>
+			<key>path</key>
+			<string>../SecondViewController.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>75D20F4B1A5FDE3A00FE941F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>75D20F4A1A5FDE3A00FE941F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>75D20F4C1A5FDFA500FE941F</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>TableViewCell.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>75D20F4D1A5FDFA500FE941F</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>TableViewCell.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>75D20F4E1A5FDFA500FE941F</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.xib</string>
+			<key>path</key>
+			<string>TableViewCell.xib</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>75D20F4F1A5FDFA500FE941F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>75D20F4D1A5FDFA500FE941F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>75D20F501A5FDFA500FE941F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>75D20F4E1A5FDFA500FE941F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>76BCCFEF2133791A6823BEBE</key>
+		<dict>
+			<key>fileRef</key>
+			<string>E99101B6408B5BE70B80443C</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>7CA8A7FDB23E482794DC66C4</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>73E64423FE332556EC3111B2</string>
+				<string>1642016966182EC6160C60B4</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Pods</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>A95EBDA7903D58593562585F</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>E99101B6408B5BE70B80443C</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Frameworks</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E99101B6408B5BE70B80443C</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>archive.ar</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>libPods-twitter-snapchat.a</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+	</dict>
+	<key>rootObject</key>
+	<string>75D20F121A5FD77100FE941F</string>
+</dict>
+</plist>
