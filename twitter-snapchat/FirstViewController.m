@@ -35,6 +35,11 @@
     return 10;//self.tableData.count;
 }
 
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 55;
+}
+
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     TableViewCell *cell = (TableViewCell *)[tableView dequeueReusableCellWithIdentifier:[TableViewCell reuseIdentifier]];

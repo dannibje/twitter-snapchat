@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "37FDA5788CAFD99E6C32F3D4"
+               BlueprintIdentifier = "AFA2B1DEA6EA2BC1D65D98E9"
                BuildableName = "libPods-twitter-snapchat-GPUImage.a"
                BlueprintName = "Pods-twitter-snapchat-GPUImage"
                ReferencedContainer = "container:Pods.xcodeproj">

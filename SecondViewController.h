@@ -7,7 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ENGAVFoundationCameraController.h"
 
-@interface SecondViewController : UIViewController <UIImagePickerControllerDelegate,UINavigationControllerDelegate>
+@interface SecondViewController : UIViewController <UIImagePickerControllerDelegate,UINavigationControllerDelegate,ENGAVFoundationCameraControllerDelegate>
+
+@property (strong,nonatomic) UIImagePickerController *picker;
+
+@property (weak, nonatomic) IBOutlet ENGAVFoundationCameraController *cameraView;
 
 @end

@@ -4,12 +4,22 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Pods-twitter-snapchat-AVFoundationCameraController.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-twitter-snapchat-DBCamera.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
 		<key>Pods-twitter-snapchat-GPUImage.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-twitter-snapchat-UIImage-ResizeNCrop.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -22,17 +32,27 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>37FDA5788CAFD99E6C32F3D4</key>
+		<key>1F0B25291062EDD6F30083F8</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>74A55A852D977B4BD0BBA34E</key>
+		<key>3B883FD7CBF7B886EFAD18BC</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>B03F5912471B2150DCB1E427</key>
+		<key>51149843F821C0929B1838A3</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>59A1679AC1B2914DAD636987</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>AFA2B1DEA6EA2BC1D65D98E9</key>
 		<dict>
 			<key>primary</key>
 			<true/>

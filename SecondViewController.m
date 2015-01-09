@@ -14,58 +14,34 @@
 
 @implementation SecondViewController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
-    
-    if (![UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]) {
-        NSLog(@"camera not availeble");
-        UIAlertView *myAlertView = [[UIAlertView alloc]     initWithTitle:@"Error"
-                                                                  message:@"Device has no camera"
-                                                                 delegate:nil
-                                                        cancelButtonTitle:@"OK"
-                                                        otherButtonTitles: nil];
-        
-        [myAlertView show];
-        
-    }
-    
-    UIImagePickerController *picker = [[UIImagePickerController alloc] init];
-    picker.sourceType = UIImagePickerControllerSourceTypeCamera;
-    picker.cameraCaptureMode = UIImagePickerControllerCameraCaptureModePhoto;
-    picker.cameraDevice = UIImagePickerControllerCameraDeviceRear;
-    picker.showsCameraControls = NO;
-    picker.navigationBarHidden = YES;
-    picker.toolbarHidden = YES;
-    picker.wantsFullScreenLayout = YES;
-    picker.allowsEditing = YES;
-    
-    picker.delegate = self;
-    
-    [self presentViewController:picker animated:YES completion:NULL];
-    
-    // Do any additional setup after loading the view.
+    NSLog(@"blessaður");
+    self.cameraView.delegate = self;
+    [self.cameraView setupInitialState:self.view.frame cameraMode:ENGAVFoundationCameraModePhoto stillCameraMethod:ENGAVFoundationStillCameraMethodStandard pixelFormat:kCVPixelFormatType_32BGRA];
+    self.cameraView.photoPreset = AVCaptureSessionPresetiFrame960x540;
+    self.cameraView.showsShutterButton = NO;
+    //[self.cameraView ]
+    [self.cameraView start];
 }
 
-- (void)didReceiveMemoryWarning {
+- (void)didReceiveMemoryWarning
+{
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
-#pragma mark - Image Picker Controller delegate methods
-
-- (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info {
-    
-    UIImage *chosenImage = info[UIImagePickerControllerEditedImage];
-    //self.imageView.image = chosenImage;
-    
-    [picker dismissViewControllerAnimated:YES completion:NULL];
-    
+- (void)cameraController:(ENGAVFoundationCameraController *)cameraController didScaledTo:(CGFloat)scale viewRect:(CGRect)rect{
+    NSLog(@"%f, %@", scale, NSStringFromCGRect(rect));
 }
 
-- (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker {
-    
-    [picker dismissViewControllerAnimated:YES completion:NULL];
-    
+- (void)cameraController:(ENGAVFoundationCameraController *)cameraController didFinishPickingImage:(UIImage *)image metadata:(NSDictionary *)metadata{
+    NSLog(@"image is: %@",image);
+}
+
+- (IBAction)onCameraButtonTouch:(id)sender {
+    [self.cameraView takePicture];
 }
 
 @end

@@ -61,13 +61,39 @@
                     <view key="view" contentMode="scaleToFill" id="7XC-hq-hrS">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="0.56862745100000001" blue="0.45098039220000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mdn-rr-Y20" customClass="ENGAVFoundationCameraController">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vdF-ql-dvd">
+                                <rect key="frame" x="120" y="470" width="79" height="50"/>
+                                <color key="backgroundColor" red="1" green="0.56862745100000001" blue="0.45098039220000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="79" id="cdD-FT-jAI"/>
+                                    <constraint firstAttribute="height" constant="50" id="uFl-R9-zDJ"/>
+                                </constraints>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onCameraButtonTouch:" destination="KA7-Zr-J1s" eventType="touchUpInside" id="8XP-yg-Gfc"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="vdF-ql-dvd" secondAttribute="bottom" constant="48" id="PdS-Q4-RcJ"/>
+                            <constraint firstAttribute="centerX" secondItem="vdF-ql-dvd" secondAttribute="centerX" id="bUo-ko-awX"/>
+                        </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="cameraView" destination="mdn-rr-Y20" id="0pv-1H-5uw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Iyi-Tc-blm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="992" y="217"/>
+            <point key="canvasLocation" x="988" y="275"/>
         </scene>
         <!--Page View Controller-->
         <scene sceneID="doj-da-6U7">

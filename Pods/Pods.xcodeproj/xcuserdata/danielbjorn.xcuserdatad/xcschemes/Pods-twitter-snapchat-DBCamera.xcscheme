@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "74A55A852D977B4BD0BBA34E"
+               BlueprintIdentifier = "51149843F821C0929B1838A3"
                BuildableName = "libPods-twitter-snapchat-DBCamera.a"
                BlueprintName = "Pods-twitter-snapchat-DBCamera"
                ReferencedContainer = "container:Pods.xcodeproj">

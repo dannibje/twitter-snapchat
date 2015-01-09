@@ -7,7 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "FirstViewController.h"
+#import "SecondViewController.h"
 
 @interface PageViewController : UIPageViewController
+
+@property (strong, nonatomic) FirstViewController *FirstViewController;
+@property (strong, nonatomic) SecondViewController *SecondViewController;
 
 @end

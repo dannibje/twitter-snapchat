@@ -1,7 +1,7 @@
 CLANG_MODULES_AUTOLINK = YES
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
-HEADER_SEARCH_PATHS = "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/DBCamera" "${PODS_ROOT}/Headers/Public/GPUImage"
-OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/DBCamera" -isystem "${PODS_ROOT}/Headers/Public/GPUImage"
-OTHER_LDFLAGS = -ObjC -l"Pods-twitter-snapchat-DBCamera" -l"Pods-twitter-snapchat-GPUImage" -framework "AVFoundation" -framework "CoreMedia" -framework "OpenGLES" -framework "QuartzCore"
+HEADER_SEARCH_PATHS = "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/AVFoundationCameraController" "${PODS_ROOT}/Headers/Public/DBCamera" "${PODS_ROOT}/Headers/Public/GPUImage" "${PODS_ROOT}/Headers/Public/UIImage-ResizeNCrop"
+OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/AVFoundationCameraController" -isystem "${PODS_ROOT}/Headers/Public/DBCamera" -isystem "${PODS_ROOT}/Headers/Public/GPUImage" -isystem "${PODS_ROOT}/Headers/Public/UIImage-ResizeNCrop"
+OTHER_LDFLAGS = -ObjC -l"Pods-twitter-snapchat-AVFoundationCameraController" -l"Pods-twitter-snapchat-DBCamera" -l"Pods-twitter-snapchat-GPUImage" -l"Pods-twitter-snapchat-UIImage-ResizeNCrop" -framework "AVFoundation" -framework "AssetsLibrary" -framework "CoreMedia" -framework "OpenGLES" -framework "QuartzCore" -framework "UIKit"
 OTHER_LIBTOOLFLAGS = $(OTHER_LDFLAGS)
 PODS_ROOT = ${SRCROOT}/Pods

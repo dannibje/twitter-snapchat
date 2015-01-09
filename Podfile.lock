@@ -1,13 +1,19 @@
 PODS:
+  - AVFoundationCameraController (0.2.2):
+    - UIImage-ResizeNCrop
   - DBCamera (2.3.9):
     - GPUImage (~> 0.1)
   - GPUImage (0.1.6)
+  - UIImage-ResizeNCrop (0.0.5)
 
 DEPENDENCIES:
+  - AVFoundationCameraController
   - DBCamera
 
 SPEC CHECKSUMS:
+  AVFoundationCameraController: e75548e9a9401eb970d4190522e918925c241fdf
   DBCamera: d73cddfffca44ab965202339ba5f5d74f8902956
   GPUImage: cecb0830bb9428f50192042e3c7b53810f51388e
+  UIImage-ResizeNCrop: eab2888c725f861b9491280a5c16d3d9a2186739
 
 COCOAPODS: 0.34.4

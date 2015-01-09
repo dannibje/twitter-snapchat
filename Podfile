@@ -4,9 +4,8 @@
 source 'https://github.com/CocoaPods/Specs.git'
 
 target 'twitter-snapchat' do
-
 pod 'DBCamera'
-
+pod "AVFoundationCameraController"
 end
 
 target 'twitter-snapchatTests' do

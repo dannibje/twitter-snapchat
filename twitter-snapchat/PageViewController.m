@@ -7,8 +7,6 @@
 //
 
 #import "PageViewController.h"
-#import "FirstViewController.h"
-#import "SecondViewController.h"
 
 @interface PageViewController () <UIPageViewControllerDataSource>
 
@@ -18,9 +16,19 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    NSLog(@"sæll vertu sjomli");
     // Do any additional setup after loading the view.
     self.dataSource=self;
-    [self setViewControllers:@[[self.storyboard instantiateViewControllerWithIdentifier:@"firstScene"]] direction:UIPageViewControllerNavigationDirectionForward animated:NO completion:nil];
+    
+    if(_FirstViewController == nil){
+        _FirstViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"firstScene"];
+    }
+    if(_SecondViewController == nil){
+        _SecondViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"secondScene"];
+    }
+    
+    
+    [self setViewControllers:@[_FirstViewController] direction:UIPageViewControllerNavigationDirectionForward animated:NO completion:nil];
     [self didMoveToParentViewController:self];
 }
 
@@ -31,19 +39,22 @@
 
 - (FirstViewController *)pageViewController:(UIPageViewController *)pageViewController viewControllerBeforeViewController:(UIViewController *)viewController
 {
+    NSLog(@"firstviewcontroller is loading?");
     if ([viewController isKindOfClass:[FirstViewController class]])
         return nil;
     
-    return [self.storyboard instantiateViewControllerWithIdentifier:@"firstScene"];
+    return _FirstViewController;
 }
 
 - (SecondViewController *)pageViewController:(UIPageViewController *)pageViewController viewControllerAfterViewController:(UIViewController *)viewController
 {
+    NSLog(@"Second is loading?");
     if ([viewController isKindOfClass:[SecondViewController class]])
         return nil;
     
-    return [self.storyboard instantiateViewControllerWithIdentifier:@"secondScene"];
+    return _SecondViewController;
 }
+
 /*
 #pragma mark - Navigation
 
